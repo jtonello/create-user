@@ -1,0 +1,49 @@
+{
+  "revision_id": "4766e3ab15494f80c0ae442cfd1f51e15f591ca4b470a33e4a04b99169748ada",
+  "name": "create-user-service",
+  "run_list": [
+    "recipe[create-user::default]",
+    "recipe[create-user::default]"
+  ],
+  "included_policy_locks": [
+    {
+      "name": "Policyfile",
+      "revision_id": "4766e3ab15494f80c0ae442cfd1f51e15f591ca4b470a33e4a04b99169748ada",
+      "source_options": {
+        "path": "./Policyfile.lock.json"
+      }
+    }
+  ],
+  "cookbook_locks": {
+    "create-user": {
+      "version": "0.1.1",
+      "identifier": "68929fac6a8adfc0b8067bf4c7fd06ccb1f5114c",
+      "dotted_decimal_identifier": "29434612068027103.54245533517400061.7476228723020",
+      "cache_key": "create-user-0.1.1",
+      "origin": "https://chef-automate.tiny.lab/organizations/lab",
+      "source_options": {
+        "chef_server": "https://chef-automate.tiny.lab/organizations/lab",
+        "version": "0.1.1"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "create-user",
+        "= 0.1.1"
+      ]
+    ],
+    "dependencies": {
+      "create-user (0.1.1)": [
+
+      ]
+    }
+  }
+}
